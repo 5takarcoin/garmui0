@@ -3,6 +3,7 @@
 :root {
     --nav-col: #101725;
     --yellow-button: #F4C117;
+    --orangish: #DB7C26;
 }
 
 * {
@@ -155,6 +156,7 @@ main * {
     width: full;
     gap: 90px;
     padding: 0px 8px 0px 8px;
+    border-bottom: none;
 }
 
 .explore-button img {
@@ -199,4 +201,146 @@ main * {
 
 .contact-button svg {
     margin-top: 4px;
+}
+
+/*  2nd Page    */
+
+.about-us {
+    padding: 96px;
+    display: flex;
+    height: 100vh;
+    gap: 60px;
+}
+
+
+.about-us-left {
+    flex: 2;
+    font-family: Montserrat, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-vid {
+    flex: 1;
+}
+
+
+.about-us h5 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+.about-us h2 {
+    color: var(--orangish);
+    padding-bottom: 16px;
+    font-size: 32px;
+}
+
+.about-us p {
+    font-size: 12px;
+    margin-bottom: 48px;
+
+}
+
+.about-us-left > p {
+    width: 80%;
+}
+
+
+.about-left {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.about-us-left-bottom {
+    gap: 60px;
+    display: flex;
+    flex: 1;
+
+}
+
+.crazy {
+    flex: 1;
+    object-fit: cover;
+    width: 50%;
+    background-size: cover;
+}
+
+
+.about-us-left-right {
+    width: 50%;
+}
+
+
+.list-points {
+    list-style: disc;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 56px;
+    padding-left: 24px;
+}
+
+.list-points li {
+    text-indent: 1rem;
+}
+.list-points li::marker {
+    color: var(--orangish)
+}
+
+.orange-text {
+    color: var(--orangish);
+}
+
+.miss-viss {
+    display: flex;
+    gap: 8px;
+    align-items: start;
+    margin-left: -16px;
+    margin-top: -24px;
+}
+
+.miss-viss div h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.miss-viss div p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.miss-viss img {
+    margin: 2px;
+}
+
+.discover-button {
+    background-color: var(--yellow-button);
+    border-radius: 50px;
+    height: 40px;
+    border: 2px solid white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    display: flex; align-items: center;
+    justify-content: space-between;
+    width: full;
+    gap: 24px;
+    padding: 0px 8px 0px 8px;
+}
+
+.discover-button img {
+    height: 20px;
+}
+
+.about-vid {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
