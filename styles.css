@@ -148,16 +148,18 @@ main * {
     border-radius: 50px;
     height: 60px;
     border: 2px solid white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     margin-top: 24px;
-    display: flex; align-items: center;
+    display: flex; 
+    align-items: center;
     justify-content: space-between;
     width: full;
     gap: 90px;
     padding: 0px 8px 0px 8px;
     border-bottom: none;
 }
+
 
 .explore-button img {
     height: 40px;
@@ -337,7 +339,7 @@ main * {
     border-radius: 50px;
     height: 40px;
     border: 2px solid white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     display: flex; align-items: center;
     justify-content: space-between;
@@ -392,13 +394,25 @@ main * {
     border-radius: 50px;
     height: 40px;
     border: 2px solid white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     display: flex; align-items: center;
     justify-content: space-between;
     width: full;
     gap: 48px;
     padding: 0px 8px 0px 24px;
+}
+
+.quote-second {
+    border: none;
+    background-color: white;
+    color: #1c1b1f;
+    padding: 0px 6px 0px 24px;
+    
+}
+
+.quote-second span img {
+    height: 28px;
 }
 
 .request-quote-button img {
@@ -427,7 +441,7 @@ main * {
     border: 1px solid #d9d9d9;
     border-radius: 50px;
     height: 32px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 10px;
     display: flex; 
     align-items: center;
@@ -461,4 +475,64 @@ main * {
 .service-cards-container {
     display: flex;
     gap: 24px;
+}
+
+.why-trust {
+    height: 100vh;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.trusted-img {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.trust-points {
+    width: 50%;
+    background-color: var(--yellow-button);
+    padding: 48px 96px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.why-trust h2 {
+    color: white;
+    font-size: 24px;
+}
+
+.trust-boxes {
+    border-radius: 8px;
+    background-color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+    width: 70%;
+}
+
+.big-trust {
+    width: 80%;
+}
+
+.trust-boxes img {
+    height: 40px;
+}
+
+.trust-boxes h3 {
+    font-size: 16px;
+}
+
+.trust-boxes p {
+    font-size: 12px;
+}
+
+.trust-boxes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }

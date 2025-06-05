@@ -5,9 +5,11 @@ const IMAGE_URL = "https://ik.imagekit.io/5takarcoin/garmui/"
 
 const hero = document.querySelector("main")
 const crazy = document.querySelector(".crazy")
+const trust = document.querySelector(".trusted-img")
 
 hero.style.backgroundImage = `url(${IMAGE_URL}hero.jpg)`
 crazy.style.backgroundImage = `url(${IMAGE_URL}about-left.png)`
+trust.style.backgroundImage = `url(${IMAGE_URL}about-vid.jpg)`
 
 
 const about_vid = document.querySelector(".about-vid")
