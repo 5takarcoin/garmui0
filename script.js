@@ -16,6 +16,8 @@ gallery.style.backgroundImage = `url(${IMAGE_URL}gallery.png)`
 
 const about_vid = document.querySelector(".about-vid")
 about_vid.src = `${IMAGE_URL}about-vid.jpg`
+const footer_map = document.querySelector(".footer-map")
+footer_map.src = `${IMAGE_URL}footer-map.png`
 // about_vid.style.objectFit = "contain"
 
 const services = [
@@ -51,7 +53,18 @@ const services = [
   }
 ];
 
+const galleryImages = [
+  "gallery/gallery1.jpg",
+  "gallery/gallery2.jpg",
+  "about-left.png",
+  "gallery/gallery4.png",
+  "hero.jpg",
+  "gallery/gallery6.jpg",
+  
+];
+
 const container = document.querySelector(".service-cards-container");
+const galleryContainer = document.querySelector(".gallery-image-container");
 
 container.innerHTML = services.map(service => `
   <div class="service-card">
@@ -63,4 +76,8 @@ container.innerHTML = services.map(service => `
       <span><img src="public/arrow_circle_right.svg" alt="Arrow Icon"></span>
     </button>
   </div>
+`).join('');
+
+galleryContainer.innerHTML = galleryImages.map(image => `
+  <img class="gallery-image-container" src="${IMAGE_URL}${image}" alt="">
 `).join('');
