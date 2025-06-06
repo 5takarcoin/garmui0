@@ -436,6 +436,11 @@ main * {
     justify-content: space-between;
 }
 
+.service-card:hover {
+    background: var(--yellow-button);
+    color: white;
+}
+
 .service-card-button {
     background: white;
     border: 1px solid #d9d9d9;
@@ -540,7 +545,7 @@ main * {
 /* Capabilities */
 
 .capabilities {
-    height: 75vh;
+    height: 120vh;
     padding: 96px;
     text-align: center;
 
@@ -550,6 +555,7 @@ main * {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 0;
 }
 
 .capabilities h5 {
@@ -602,4 +608,66 @@ main * {
 
 .wider-button {
     gap: 160px;
+}
+
+.products-section {
+    height: 100vh;
+    padding: 96px;
+    text-align: center;
+
+    font-family: Montserrat, sans-serif;;
+
+    background-color: #fafafa;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.products {
+    width: 100%;
+}
+
+.products-nav {
+    width: 100%;
+    padding: 0px 96px 0px 96px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-selected {
+    color: var(--orangish);
+    border-bottom: 2px solid var(--orangish);
+    font-weight: 600;
+}
+
+.products-nav a {
+    padding: 8px 24px
+}
+
+.product-categories button{
+    width: 160px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-categories button:hover{
+    background-color: var(--orangish);
+    color: white;
+}
+
+.product-categories {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 96px 0px 96px;
 }
