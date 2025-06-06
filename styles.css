@@ -671,3 +671,87 @@ main * {
     width: 100%;
     padding: 0px 96px 0px 96px;
 }
+
+.product-card {
+    width: 224px;
+    height: 260px;
+}
+
+.client-section {
+    height: 60vh;
+    padding: 96px;
+    text-align: center;
+
+    font-family: Montserrat, sans-serif;;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--nav-col);
+}
+
+.client-section h5 {
+    font-weight: normal;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    
+}
+
+.client-section h2 {
+    color: var(--yellow-button);
+    padding-bottom: 16px;
+    font-size: 44px;
+    font-weight: 700;
+    
+}
+
+.slider-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.slider-circle span{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+
+}
+
+
+.certificate-section {
+    height: 90vh;
+    padding: 96px;
+    text-align: center;
+
+    font-family: Montserrat, sans-serif;;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.certificate-section h5 {
+    font-weight: normal;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    
+}
+
+.certificate-section h2 {
+    color: var(--yellow-button);
+    padding-bottom: 16px;
+    font-size: 44px;
+    font-weight: 700;
+    
+}
