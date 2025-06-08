@@ -845,11 +845,63 @@ main * {
 }
 
 .testimonial-card {
+    height: 360px;
+    width: 280px;
+    border-radius: 12px;
+    border: 1px solid var(--yellow-button);
+    background: #f9f9f9;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    text-align: start;
+
+    padding: 24px;
+    line-height: 28px;
+    justify-content: space-between;
 
 }
 
+.testi-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testi-name {
+    font-weight: 700;
+}
+
+.testi-logo {
+    height: 20px;
+    width: 50px;
+    border-radius: 0%;
+    object-fit: contain;
+}
+
+.testi-per {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    margin-bottom: 24px;
+}
+
+.testimonial-cards {
+    display: flex;
+    align-items: end;
+    gap: 72px;}
+
+
+.selected-testimonial-card {
+    height: 378px;
+    width: 294px;
+    background: linear-gradient(to top, #fae194, white);
+}
+
 .footer-section {
-    height: 75vh;
     padding: 96px;
     padding-bottom: 48px;
     text-align: center;
@@ -886,11 +938,17 @@ main * {
     justify-content: space-between;
     align-items: start;
     height: 100%;
-    border: 5px solid red;
+    gap: 48px;
 }
 
 .footer-middle {
     flex: 2;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer-middle-links {
@@ -898,6 +956,8 @@ main * {
     gap: 32px; 
     align-items: center;
     justify-content: center;
+
+    margin-bottom: 48px;
 }
 
 .footer-map {
@@ -909,4 +969,38 @@ main * {
 
 .footer-left-outer > img {
     height: 48px;
+}
+
+.small-text {
+    color: white;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-left {
+    width: 90%;
+}
+
+.footer-para {
+    text-align: start;
+
+    padding-bottom: 96px;
+}
+
+.padding-bot-small {
+    padding-bottom: 12px;
+}
+
+.rot-180 {
+    transform: rotate(180deg);
+}
+
+.testi-arrows {
+    display: flex;
+    gap: 24px;
+}
+
+
+.testi-arrows img {
+    height: 40px;
 }

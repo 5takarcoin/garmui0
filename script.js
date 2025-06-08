@@ -63,8 +63,30 @@ const galleryImages = [
   
 ];
 
+const testis = [
+  {
+    name: "Murali S..",
+    para: "Quite an insightful training; tons of real time examples to co-relate with what we are learning and helps with real time projects. The training has opened doors to countless opportunities.",
+    per: "per1",
+    logo: "levis"
+  },
+  {
+    name: "Mark G..",
+    para: "The instructor was absolutely outstanding, very patient, knowledgeable, and consistently kept the class interesting. I would like to thank NetCom Learning for this educational opportunity.",
+    per: "per2",
+    logo: "boss"
+  },
+  {
+    name: "Andrew Y..",
+    para: "The team was very happy with the overall training. The content, reading material and training resources were very useful. The training instructor was knowledgeable, engaging and had a clear teaching style.",
+    per: "per3",
+    logo: "lacoste"
+  }
+]
+
 const container = document.querySelector(".service-cards-container");
 const galleryContainer = document.querySelector(".gallery-image-container");
+const testi = document.querySelector(".testimonial-cards");
 
 container.innerHTML = services.map(service => `
   <div class="service-card">
@@ -80,4 +102,17 @@ container.innerHTML = services.map(service => `
 
 galleryContainer.innerHTML = galleryImages.map(image => `
   <img class="gallery-image-container" src="${IMAGE_URL}${image}" alt="">
+`).join('');
+
+testi.innerHTML = testis.map((testi, i) => `
+  <div class="testimonial-card ${i === 1 && "selected-testimonial-card"}">
+                <div>
+                    <img class="testi-per" src="https://ik.imagekit.io/5takarcoin/garmui/testi/${testi.per}" alt="">
+                <p>${testi.para}</p>
+                </div>
+                <div class="testi-bottom">
+                    <span class="testi-name">${testi.name}</span>
+                    <img class="testi-logo" src="https://ik.imagekit.io/5takarcoin/garmui/testi/${testi.logo}" alt="levis">
+                </div>
+            </div>
 `).join('');
