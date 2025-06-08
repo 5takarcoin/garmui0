@@ -84,9 +84,44 @@ const testis = [
   }
 ]
 
+const products = [
+  {
+    name: "Heritage Denim",
+    img: "prod1.png",
+    rating: 4.5,
+    year: 1999
+  },
+  {
+    name: "Reduced Water Use",
+    img: "prod2.png",
+    rating: 4.5,
+    year: 1999
+  },
+  {
+    name: "Recycled Denim",
+    img: "prod3.png",
+    rating: 4.5,
+    year: 1999
+  },
+  {
+    name: "Laser Technology",
+    img: "prod4.png",
+    rating: 4.5,
+    year: 1999
+  },
+  {
+    name: "Tracing",
+    img: "prod5.png",
+    rating: 4.5,
+    year: 1999
+  },
+  
+]
+
 const container = document.querySelector(".service-cards-container");
 const galleryContainer = document.querySelector(".gallery-image-container");
 const testi = document.querySelector(".testimonial-cards");
+const productsContainer = document.querySelector(".product-cards-container");
 
 container.innerHTML = services.map(service => `
   <div class="service-card">
@@ -116,3 +151,25 @@ testi.innerHTML = testis.map((testi, i) => `
                 </div>
             </div>
 `).join('');
+
+productsContainer.innerHTML = products.map(product => `
+   <div class="product-card">
+        <img src="${IMAGE_URL}product/${product.img}" alt="">
+        <div class="product-card-info">
+            <h3>${product.name}</h3>
+            <div class="product-rating">
+                <span class="product-rating-val">${product.rating}</span>
+                <div class="product-rating-stars">
+                    <span><img src="public/star.svg" alt=""></span>
+                    <span><img src="public/star.svg" alt=""></span>
+                    <span><img src="public/star.svg" alt=""></span>
+
+                </div>
+                <span>(${product.year})</span>
+            </div>
+            <div class="product-card-tags">
+                <span>Best seller</span>
+            </div>
+        </div>
+    </div>
+`).join('')
